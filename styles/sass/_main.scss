@@ -1,0 +1,55 @@
+//Intro Section Styling
+.intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  img {
+    width: 33%;
+    border-radius: 20px;
+  }
+}
+
+.explanation {
+  width: 50%;
+}
+
+.questions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.questions .question-image {
+  width: 33%;
+}
+
+.questions .question-content {
+  width: 50%;
+}
+
+//Question Styling
+ul {
+  list-style: none;
+  padding: 50px 0;
+  li {
+    margin-bottom: 3%;
+  }
+  li:nth-of-type(4) {
+    margin-bottom: 0;
+  }
+}
+
+.impact-text {
+  transition: .3s ease;
+}
+
+input[type="radio"]:checked + label .impact-text {
+  font-weight: 700;
+  color: $red;
+}
+
+input[type="radio"]:checked + label::before {
+  color: $red;
+  content: "\f058";
+}
