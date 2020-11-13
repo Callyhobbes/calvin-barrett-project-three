@@ -434,7 +434,7 @@ header {
   }
 }
 
-.intro {
+.intro, .result-display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,15 +442,14 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.intro img {
+.intro img, .result-display img {
   width: 33%;
   border-radius: 20px;
-}
-
-.intro .parallax {
-  position: relative;
 }
 
 .explanation {
@@ -514,8 +513,29 @@ input[type="radio"]:checked + label::before {
   content: "\f058";
 }
 
-footer {
+.results {
   background-color: #151e25;
+  color: #fff;
+}
+
+.results h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.results h3::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #b73a1c;
+}
+
+footer {
+  background-color: #b73a1c;
   text-align: center;
 }
 

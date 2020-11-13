@@ -1,14 +1,12 @@
 //Intro Section Styling
-.intro {
+.intro, .result-display {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  align-items: center;
   img {
     width: 33%;
     border-radius: 20px;
-  }
-  .parallax {
-    position: relative;
   }
 }
 
@@ -63,3 +61,24 @@ input[type="radio"]:checked + label::before {
   color: $red;
   content: "\f058";
 }
+
+//Results Styling
+.results {
+  background-color: $darkBlue;
+  color: $white;
+  h3 {
+    @include fontStyling(4rem, 600);
+    padding: 20px 0;
+    text-align: center;
+    &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $red;
+    }
+  }
+}
+
+
