@@ -9,7 +9,7 @@ let score = {
   osaka: 0,
   kyoto: 0,
   fukuoka: 0
-}
+};
 
 //Create an object of different results that the user will receive
 const cities = {
@@ -35,7 +35,7 @@ const cities = {
   }
 };
 
-//Create a function to all for a parallax scroll on the h1
+// Create a function to all for a parallax scroll on the h1
 function parallaxScroll() {
   //add an event listener to the scroll
   $(window).on('scroll', function () {
@@ -52,7 +52,7 @@ function parallaxScroll() {
 //Create a smooth scroll when anchors and buttons clicked
 function smoothScroll() {
   //create an event listener on click on anchors and buttons
-  $('a, button').on('click', function (event) {
+  $('a').on('click', function (event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== '') {
       // Prevent default anchor click behavior
@@ -61,7 +61,7 @@ function smoothScroll() {
       const MoveTo = this.hash;
       // Using smooth page scroll 
       $('html, body').animate({
-        scrollTop: $(MoveTo).offset().top
+        'scrollTop': $(MoveTo).offset().top
       }, 1000, function () {
         // default click behavior
         window.location.hash = MoveTo;
@@ -71,14 +71,24 @@ function smoothScroll() {
 };
 
 
-  $('fieldset').on('submit', function(event) {
+  $('form').on('submit', function(event) {
     // console.log('hello');
     //prevent browser refresh on submission
     event.preventDefault();
-
-    let count = $(this).forEach('input:radio:checked').attr('data-location');
-    
+    //select all checked inputs in the field set
+    let count = $(this).find('input:radio:checked');
+    //get
     console.log(count);
+
+    let results = count.data('location');
+
+    console.log(results);
+
+    //loop through to get the 3 data-location - locations
+    for (let item in count) {
+      console.log(count[item]);
+    }
+
   });
 
 // Submit form form to get results.
@@ -88,6 +98,8 @@ function smoothScroll() {
 // Create a button to the top of the page so that the quiz can be restarted.
 //Create init function
 
+
+// Create a function for when the document is ready
 $(function() {
   smoothScroll();
   parallaxScroll();
