@@ -12,7 +12,7 @@
 <body>
   <!--Header-->
   <header>
-    <h1 id="header-text">ようこそ、日本へ</h1>、
+    <h1 class="header-text">ようこそ、日本へ</h1>、
     <div class="clouds">
       <img src="./assets/cloud1.png" style="--i:1;">
       <img src="./assets/cloud2.png" style="--i:2;">
@@ -40,7 +40,7 @@
     </section>
     <form action="" class="preference">
       <!--Food Survey Question 1-->
-      <fieldset id="question-one">
+      <fieldset id="question-one" class="red-bg">
         <div class="questions wrapper">
           <div class="question-image">
             <img src="./assets/ramen.jpg" alt="ramen">
@@ -72,7 +72,7 @@
       </fieldset>
       <!--Activity Survey Question 2-->
       <fieldset id="question-two">
-        <div class="questions wrapper">
+        <div class="questions reverse wrapper">
           <div class="question-image">
             <img src="./assets/ramen.jpg" alt="ramen">
           </div>
@@ -102,7 +102,7 @@
         </div>
       </fieldset>
       <!--Personality Survey Question 3-->
-      <fieldset id="question-three">
+      <fieldset id="question-three" class="red-bg">
         <div class="questions wrapper">
           <div class="question-image">
             <img src="./assets/ramen.jpg" alt="ramen">
@@ -112,31 +112,33 @@
             <p>You want to sample an adult beverage. What do you reach for?</p>
             <ul>
               <li>
-                <input id="shochu" name="food" type="radio" value="1" required="" class="sr-only" data-location="">
+                <input id="shochu" name="drink" type="radio" value="1" required="" class="sr-only" data-location="fukuoka">
                 <label for="shochu"><span class="impact-text">Shochu</span> - a delicious sweet potato in liquid form</label>
               </li>
               <li>
-                <input id="whisky" name="food" type="radio" value="2" required="" class="sr-only" data-location="">
+                <input id="whisky" name="drink" type="radio" value="2" required="" class="sr-only" data-location="tokyo">
                 <label for="whisky"><span class="impact-text">Whisky</span> - on the rock, on top of the world</label>
               </li>
               <li>
-                <input id="beer" name="food" type="radio" value="3" required="" class="sr-only" data-location="osaka">
+                <input id="beer" name="drink" type="radio" value="3" required="" class="sr-only" data-location="osaka">
                 <label for="beer"><span class="impact-text">Beer</span> - boasterous chatter at an Izakaya</label>
               </li>
               <li>
-                <input id="umeshu" name="food" type="radio" value="4" required="" class="sr-only" data-location="kyoto">
+                <input id="umeshu" name="drink" type="radio" value="4" required="" class="sr-only" data-location="kyoto">
                 <label for="umeshu"><span class="impact-text">Umeshu</span> - a neat distilled plum drink under the cherry blossoms</label>
               </li>
             </ul>
-            <button aria-label="submit to get the results">Tell me where!</button>
+            <button type="submit">Tell me where!</button>
           </div>
         </div>
       </fieldset>
+      <!--Results Section-->
+      <section class="results wrapper" id="results">
+        
+      </section>
     </form>
-    <!--Results Section-->
-    <section class="results" id="results">
-      <!--Results to be displayed after quiz completed-->
-    </section>
+    <!--Results to be displayed after quiz completed-->
+    
   </main>
   <!--Footer-->
   <footer>

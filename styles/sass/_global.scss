@@ -94,14 +94,14 @@ button {
   cursor: pointer;
 }
 
-fieldset {
+form {
   padding: 0;
-  border-style: none;
 }
 
 label {
   @include fontStyling(2rem);
   padding-left: 15px;
+  cursor: pointer;
   &::before {
     content: "\f6a1";
     font-weight: 900;

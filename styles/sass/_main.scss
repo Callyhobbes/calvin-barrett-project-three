@@ -7,17 +7,27 @@
     width: 33%;
     border-radius: 20px;
   }
+  .parallax {
+    position: relative;
+  }
 }
 
 .explanation {
   width: 50%;
 }
 
+// .red-bg {
+//   background-color: $red;
+// }
+
 .questions {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 30px 0;
+  &.reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 .questions .question-image {

@@ -352,6 +352,7 @@ label {
   font-size: 2rem;
   font-weight: 400;
   padding-left: 15px;
+  cursor: pointer;
 }
 
 label::before {
@@ -448,6 +449,10 @@ header {
   border-radius: 20px;
 }
 
+.intro .parallax {
+  position: relative;
+}
+
 .explanation {
   width: 50%;
 }
@@ -464,6 +469,13 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px 0;
+}
+
+.questions.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .questions .question-image {
@@ -503,10 +515,11 @@ input[type="radio"]:checked + label::before {
 }
 
 footer {
-  background-color: #140f0b;
+  background-color: #151e25;
   text-align: center;
 }
 
 footer p {
   color: #fff;
+  padding: 10px 0;
 }
