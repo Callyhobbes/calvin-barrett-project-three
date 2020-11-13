@@ -49,7 +49,7 @@ function parallaxScroll() {
   });
 };
 
-//Create a smooth scroll when anchors and buttons clicked
+// Create a smooth scroll when anchors and buttons clicked
 function smoothScroll() {
   //create an event listener on click on anchors and buttons
   $('a').on('click', function (event) {
@@ -70,30 +70,33 @@ function smoothScroll() {
   });
 };
 
-
-  $('form').on('submit', function(event) {
-    // console.log('hello');
-    //prevent browser refresh on submission
-    event.preventDefault();
+// Submit form on final question to get results.
+$('form').on('submit', function(event) {
+  //prevent browser refresh on submission
+  event.preventDefault();
+    // Create a function that will tally the values of the radio items selected.
     //select all checked inputs in the field set
-    let count = $(this).find('input:radio:checked');
-    //get
-    console.log(count);
+  // console.log($('input[value="tokyo"]:checked'));
+    let count = $('fieldset').find('input:radio:checked');
 
-    let results = count.data('location');
+    //loop through to get the 3 values and their value
+    for (let i =0; i < count.length; i++) {
+      let result = count[i].value;
 
-    console.log(results);
+      // Create an if statement for the total score value
+      if (result) {
+        score[result]++;
+        console.log(score);
+      }
 
-    //loop through to get the 3 data-location - locations
-    for (let item in count) {
-      console.log(count[item]);
     }
+    
+    let topScore = Math.max(score.tokyo, score.osaka, score.fukuoka, score.kyoto);
+    console.log(topScore);
 
   });
 
-// Submit form form to get results.
-// Create a function that will tally the values of the radio items selected.
-// Create an if statement for the total score value and return the result on the page (what Japanese location you should visit).
+// Return the result on the page (what Japanese location you should visit).
 // Have the stored array value reset after being displayed.
 // Create a button to the top of the page so that the quiz can be restarted.
 //Create init function
