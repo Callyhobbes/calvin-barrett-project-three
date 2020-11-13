@@ -12,30 +12,30 @@ let scores = [
 ];
 
 //Create an object of different results that the user will receive
-const cities = {
-  tokyo: {
-    name: 'Tokyo',
-    info: 'insert text here',
-    image: '',
+const cities = [
+  {
+    name: 'tokyo',
+    info: 'The bustling sound of people, trains darting back and forth and towers reaching to the sky. Tokyo is filled with everything from the world famous Tsukiji fish market, the Meiji Shrine and the anime enthuists dream: Akihabara',
+    image: './assets/rising-sun.png',
   },
-  osaka: {
-    name: 'Osaka',
+  {
+    name: 'osaka',
     info: 'insert text here',
-    image: '',
+    image: './assets/rising-sun.png',
   },
-  kyoto: {
-    name: 'Kyoto',
+  {
+    name: 'kyoto',
     info: 'insert text here',
-    image: '',
+    image: './assets/rising-sun.png',
   },
-  fukuoka: {
-    name: 'Fukuoka',
+  {
+    name: 'fukuoka',
     info: 'insert text here',
-    image: '',
+    image: './assets/rising-sun.png',
   }
-};
+];
 
-// Create a function to all for a parallax scroll on the h1
+// Create a function to all for a parallax scroll on the h1.
 function parallaxScroll() {
   //add an event listener to the scroll
   $(window).on('scroll', function () {
@@ -49,7 +49,7 @@ function parallaxScroll() {
   });
 };
 
-// Create a smooth scroll when anchors and buttons clicked
+// Create a smooth scroll when anchors and buttons clicked.
 function smoothScroll() {
   //create an event listener on click on anchors and buttons
   $('a').on('click', function (event) {
@@ -74,6 +74,11 @@ function smoothScroll() {
 $('form').on('submit', function(event) {
   //prevent browser refresh on submission
   event.preventDefault();
+
+  $(`html,body`).animate({
+    scrollTop: $('.results').offset().top
+  }, 1000);
+
   // map through the scores array to update points on it
   const updateScore = scores.map(function(city) {
     // using the checked selector to get total points for each city 
@@ -96,19 +101,42 @@ $('form').on('submit', function(event) {
       // Update the leader board
       currentHighScore = updateScore[i].score;
     }
-    // if current iteration of score IS THE SAME as the leader board (TIE)
-
   }
-    // add to result array
-  console.log(result);
+
+  for (let loc in cities) {
+    // console.log(cities[loc].name);
+    const winningCity = result[0].cityName;
+    const displayInformation = cities[loc];
+
+    if (displayInformation.name === winningCity) {
+      const htmlToAppend = `
+        <div class="result-display wrapper">
+          <div class="explanation">
+            <h3>You got <span>${displayInformation.name}<span>!</h3>
+            <p>${displayInformation.info}</p>
+          </div>
+          <img src="${displayInformation.image}" alt="${displayInformation.name}">
+        </div>
+        <div class="redo-quiz">
+          <a href="#intro" class"redo">Want to try again?</a>
+        </div>
+      `
+      $('.results').html(htmlToAppend);
+    }
+  }
 });
 
-
-// Return the result on the page (what Japanese location you should visit).
-// Have the stored array value reset after being displayed.
-// Create a button to the top of the page so that the quiz can be restarted.
-//Create init function
-
+// Retake the test.
+$('.results').on('click', 'a', function() {
+  // empty the results
+  $('.results').empty();
+  // clear the form's checked inputs
+  $('form').trigger('reset');
+  // smooth scroll
+  $(`html,body`).animate({
+    scrollTop: $('#intro').offset().top
+  }, 1000);
+});
 
 // Create a function for when the document is ready
 $(function() {

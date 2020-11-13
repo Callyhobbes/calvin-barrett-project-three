@@ -70,6 +70,9 @@ input[type="radio"]:checked + label::before {
     @include fontStyling(4rem, 600);
     padding: 20px 0;
     text-align: center;
+    span {
+      text-transform: capitalize;
+    }
     &::after {
     content: "";
     display: block;
@@ -79,6 +82,12 @@ input[type="radio"]:checked + label::before {
     border-bottom: 3px solid $red;
     }
   }
+}
+
+.redo-quiz {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 

@@ -270,7 +270,7 @@ h1 {
   color: #fff;
   text-shadow: 2px 2px 2px #140f0b;
   position: relative;
-  z-index: 1000;
+  z-index: 10;
 }
 
 h2 {
@@ -525,6 +525,10 @@ input[type="radio"]:checked + label::before {
   text-align: center;
 }
 
+.results h3 span {
+  text-transform: capitalize;
+}
+
 .results h3::after {
   content: "";
   display: block;
@@ -532,6 +536,16 @@ input[type="radio"]:checked + label::before {
   width: 80px;
   padding-bottom: 10px;
   border-bottom: 3px solid #b73a1c;
+}
+
+.redo-quiz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
 }
 
 footer {
