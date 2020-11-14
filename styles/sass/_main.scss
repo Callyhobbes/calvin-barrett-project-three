@@ -14,18 +14,58 @@
   width: 50%;
 }
 
-// .red-bg {
-//   background-color: $red;
-// }
-
 .questions {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   padding: 30px 0;
-  &.reverse {
-    flex-direction: row-reverse;
+  &.red-bg {
+    flex-direction: row;
+    color: $white;
   }
+}
+
+input[type="radio"]:checked + label .impact-text {
+  font-weight: 700;
+  color: $red;
+}
+
+input[type="radio"]:checked + label::before {
+  color: $red;
+  content: "\f058";
+}
+
+.red-bg {
+  input[type="radio"]:checked + label .impact-text {
+    color: $darkBlue;
+  }
+  input[type="radio"]:checked + label::before {
+    color: $darkBlue;
+  }
+}
+
+// anchor and button styling in red background fieldsets
+.red-bg a,
+.red-bg button {
+  border: 3px solid $white;
+  background: none;
+  color: $red;
+  z-index: 5;
+  &:hover,
+  &:focus {
+    color: $white;
+    &::before {
+      height: 0%;
+    }
+  }
+  &::before {
+    background-color: $white;
+  }
+}
+
+// span iconic work for each option
+.impact-text {
+  transition: .3s ease;
 }
 
 .questions .question-image {
@@ -48,20 +88,6 @@ ul {
   }
 }
 
-.impact-text {
-  transition: .3s ease;
-}
-
-input[type="radio"]:checked + label .impact-text {
-  font-weight: 700;
-  color: $red;
-}
-
-input[type="radio"]:checked + label::before {
-  color: $red;
-  content: "\f058";
-}
-
 //Results Styling
 .results {
   background-color: $darkBlue;
@@ -81,6 +107,23 @@ input[type="radio"]:checked + label::before {
     padding-bottom: 10px;
     border-bottom: 3px solid $red;
     }
+  }
+}
+
+.blue-bg a {
+  border: 3px solid $white;
+  background: none;
+  color: $darkBlue;
+  z-index: 5;
+  &:hover,
+  &:focus {
+    color: $white;
+    &::before {
+      height: 0%;
+    }
+  }
+  &::before {
+    background-color: $white;
   }
 }
 

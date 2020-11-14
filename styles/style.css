@@ -291,6 +291,13 @@ p {
   line-height: 1.4;
 }
 
+button {
+  background-color: unset;
+  cursor: pointer;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
+}
+
 a,
 button {
   font-size: 2rem;
@@ -298,7 +305,7 @@ button {
   display: inline-block;
   padding: 15px 30px;
   margin: 20px 0;
-  background-color: none;
+  background: none;
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
@@ -338,14 +345,13 @@ button:focus::before {
   height: 0%;
 }
 
-button {
-  background-color: unset;
-  cursor: pointer;
-}
-
 fieldset {
   padding: 0;
   border-style: none;
+}
+
+fieldset:nth-child(odd) {
+  background-color: #b73a1c;
 }
 
 label {
@@ -461,20 +467,69 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px 0;
 }
 
-.questions.reverse {
+.questions.red-bg {
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
+}
+
+input[type="radio"]:checked + label .impact-text {
+  font-weight: 700;
+  color: #b73a1c;
+}
+
+input[type="radio"]:checked + label::before {
+  color: #b73a1c;
+  content: "\f058";
+}
+
+.red-bg input[type="radio"]:checked + label .impact-text {
+  color: #151e25;
+}
+
+.red-bg input[type="radio"]:checked + label::before {
+  color: #151e25;
+}
+
+.red-bg a,
+.red-bg button {
+  border: 3px solid #fff;
+  background: none;
+  color: #b73a1c;
+  z-index: 5;
+}
+
+.red-bg a:hover, .red-bg a:focus,
+.red-bg button:hover,
+.red-bg button:focus {
+  color: #fff;
+}
+
+.red-bg a:hover::before, .red-bg a:focus::before,
+.red-bg button:hover::before,
+.red-bg button:focus::before {
+  height: 0%;
+}
+
+.red-bg a::before,
+.red-bg button::before {
+  background-color: #fff;
+}
+
+.impact-text {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .questions .question-image {
@@ -496,21 +551,6 @@ ul li {
 
 ul li:nth-of-type(4) {
   margin-bottom: 0;
-}
-
-.impact-text {
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-
-input[type="radio"]:checked + label .impact-text {
-  font-weight: 700;
-  color: #b73a1c;
-}
-
-input[type="radio"]:checked + label::before {
-  color: #b73a1c;
-  content: "\f058";
 }
 
 .results {
@@ -538,6 +578,25 @@ input[type="radio"]:checked + label::before {
   border-bottom: 3px solid #b73a1c;
 }
 
+.blue-bg a {
+  border: 3px solid #fff;
+  background: none;
+  color: #151e25;
+  z-index: 5;
+}
+
+.blue-bg a:hover, .blue-bg a:focus {
+  color: #fff;
+}
+
+.blue-bg a:hover::before, .blue-bg a:focus::before {
+  height: 0%;
+}
+
+.blue-bg a::before {
+  background-color: #fff;
+}
+
 .redo-quiz {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,11 +608,18 @@ input[type="radio"]:checked + label::before {
 }
 
 footer {
-  background-color: #b73a1c;
   text-align: center;
 }
 
 footer p {
   color: #fff;
   padding: 10px 0;
+}
+
+.footer-main {
+  background-color: #151e25;
+}
+
+.footer-flip {
+  background-color: #b73a1c;
 }

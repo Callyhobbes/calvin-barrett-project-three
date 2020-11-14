@@ -117,13 +117,14 @@ $('form').on('submit', function(event) {
           </div>
           <img src="${displayInformation.image}" alt="${displayInformation.name}">
         </div>
-        <div class="redo-quiz">
+        <div class="redo-quiz blue-bg">
           <a href="#intro" class"redo">Want to try again?</a>
         </div>
       `
       $('.results').html(htmlToAppend);
     }
   }
+  $('footer').toggleClass('footer-main footer-flip');
 });
 
 // Retake the test.
@@ -136,6 +137,7 @@ $('.results').on('click', 'a', function() {
   $(`html,body`).animate({
     scrollTop: $('#intro').offset().top
   }, 1000);
+  $('footer').toggleClass('footer-main footer-flip');
 });
 
 // Create a function for when the document is ready

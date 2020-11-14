@@ -39,50 +39,19 @@
       </div>
     </section>
     <form action="" class="preference">
-      <!--Food Survey Question 1-->
-      <fieldset id="question-one" class="red-bg">
-        <div class="questions wrapper">
-          <div class="question-image">
-            <img src="./assets/ramen.jpg" alt="ramen">
-          </div>
-          <div class="question-content">
-            <h3>Food</h3>
-            <p>You've been walking the streets all day and are famished. What's your first choice for a bite to eat?</p>
-            <ul>
-              <li>
-                <input id="ramen" name="food" type="radio" required="" class="sr-only" value="fukuoka">
-                <label for="ramen"><span class="impact-text">Ramen</span> - the ultimate greasy snack</label>
-              </li>
-              <li>
-                <input id="sushi" name="food" type="radio" required="" class="sr-only" value="tokyo">
-                <label for="sushi"><span class="impact-text">Sushi</span> - world famous and fresh off the docks</label>
-              </li>
-              <li>
-                <input id="takoyaki" name="food" type="radio" required="" class="sr-only" value="osaka">
-                <label for="takoyaki"><span class="impact-text">Takoyaki</span> - deep-fried octopus balls; yum</label>
-              </li>
-              <li>
-                <input id="yudofu" name="food" type="radio" required="" class="sr-only" value="kyoto">
-                <label for="yudofu"><span class="impact-text">Yudofu</span> - boiled tofu with kelp and dipping sauce</label>
-              </li>
-            </ul>
-            <a href="#question-two">Next Question</a>
-          </div>
-        </div>
-      </fieldset>
-      <!--Activity Survey Question 2-->
-      <fieldset id="question-two">
-        <div class="questions reverse wrapper">
+      <!--Activity Survey Question 1-->
+      <fieldset id="question-one">
+        <div class="questions red-bg wrapper">
           <div class="question-image">
             <img src="./assets/ramen.jpg" alt="ramen">
           </div>
           <div class="question-content">
             <h3>Activities</h3>
-            <p>You've been walking the streets all day and are famished. What's your first choice for a bite to eat?</p>
+            <p>Adventure awaits, but what do you picture as a great adventure when you think of visiting Japan?</p>
             <ul>
               <li>
                 <input id="scenery" name="activity" type="radio" required="" class="sr-only" value="fukuoka">
-                <label for="scenery"><span class="impact-text">Scenery</span> - I want to see the mountains and valleys</label>
+                <label for="scenery"><span class="impact-text">Scenery</span> - I want to see the beautiful mountains and valleys</label>
               </li>
               <li>
                 <input id="future" name="activity" type="radio" required="" class="sr-only" value="tokyo">
@@ -97,19 +66,50 @@
                 <label for="history"><span class="impact-text">History</span> - take me on a trip back in time</label>
               </li>
             </ul>
-            <a href="#question-three">Next Question</a>
+            <a href="#question-two" class="reverse-color">Next Question</a>
           </div>
         </div>
       </fieldset>
-      <!--Personality Survey Question 3-->
-      <fieldset id="question-three" class="red-bg">
+      <!--Food Survey Question 2-->
+      <fieldset id="question-two">
         <div class="questions wrapper">
           <div class="question-image">
             <img src="./assets/ramen.jpg" alt="ramen">
           </div>
           <div class="question-content">
             <h3>Food</h3>
-            <p>You want to sample an adult beverage. What do you reach for?</p>
+            <p>You've just finished your adventures for the day and are famished. What's your first choice for a bite to eat?</p>
+            <ul>
+              <li>
+                <input id="ramen" name="food" type="radio" required="" class="sr-only" value="fukuoka">
+                <label for="ramen"><span class="impact-text">Ramen</span> - the ultimate greasy snack</label>
+              </li>
+              <li>
+                <input id="sushi" name="food" type="radio" required="" class="sr-only" value="tokyo">
+                <label for="sushi"><span class="impact-text">Sushi</span> - world famous and fresh off the docks</label>
+              </li>
+              <li>
+                <input id="takoyaki" name="food" type="radio" required="" class="sr-only" value="osaka">
+                <label for="takoyaki"><span class="impact-text">Takoyaki</span> - deep-fried octopus balls breaded to perfection</label>
+              </li>
+              <li>
+                <input id="yudofu" name="food" type="radio" required="" class="sr-only" value="kyoto">
+                <label for="yudofu"><span class="impact-text">Yudofu</span> - boiled tofu with kelp and dipping sauce</label>
+              </li>
+            </ul>
+            <a href="#question-three">Next Question</a>
+          </div>
+        </div>
+      </fieldset>
+      <!--Drinks Survey Question 3-->
+      <fieldset id="question-three">
+        <div class="questions red-bg wrapper">
+          <div class="question-image">
+            <img src="./assets/ramen.jpg" alt="ramen">
+          </div>
+          <div class="question-content">
+            <h3>Drinks</h3>
+            <p>Now you could use an adult beverage to wash down that meal. What do you reach for?</p>
             <ul>
               <li>
                 <input id="shochu" name="drink" type="radio" required="" class="sr-only" value="fukuoka">
@@ -121,14 +121,76 @@
               </li>
               <li>
                 <input id="beer" name="drink" type="radio" required="" class="sr-only" value="osaka">
-                <label for="beer"><span class="impact-text">Beer</span> - boasterous chatter at an Izakaya</label>
-              </li>
-              <li>
-                <input id="umeshu" name="drink" type="radio" required="" class="sr-only" value="kyoto">
-                <label for="umeshu"><span class="impact-text">Umeshu</span> - a neat distilled plum drink under the cherry blossoms</label>
+                <label for="beer"><span class="impact-text">Beer</span> - straight from bottle to your frosted glass</label>
+                </li>
+                <li>
+                  <input id="umeshu" name="drink" type="radio" required="" class="sr-only" value="kyoto">
+                  <label for="umeshu"><span class="impact-text">Umeshu</span> - a neat, distilled plum drink under the cherry blossoms</label>
               </li>
             </ul>
-            <button aria-label="submit to get the results" type="submit">Tell me where!</button>
+            <a href="#question-four" class="reverse-color">Next Question</a>
+          </div>
+        </div>
+      </fieldset>
+      <!--Personality Survey Question 4-->
+      <fieldset id="question-four">
+        <div class="questions wrapper">
+          <div class="question-image">
+            <img src="./assets/ramen.jpg" alt="ramen">
+          </div>
+          <div class="question-content">
+            <h3>Personality</h3>
+            <p>You have begun an hour long train ride to your next destination. Who would you perfer to sit next to?</p>
+            <ul>
+              <li>
+                <input id="boisterous" name="personality" type="radio" required="" class="sr-only" value="osaka">
+                <label for="boisterous"><span class="impact-text">Boisterous</span> - energetic and cheerful to a fault</label>
+              </li>
+              <li>
+                <input id="reserved" name="personality" type="radio" required="" class="sr-only" value="kyoto">
+                <label for="reserved"><span class="impact-text">Reserved</span> - quiet, yet polite. Not a hair out of place</label>
+              </li>
+              <li>
+                <input id="shy" name="personality" type="radio" required="" class="sr-only" value="fukuoka">
+                <label for="shy"><span class="impact-text">Shy</span> - friendly, but bashful.</label>
+              </li>
+              <li>
+                <input id="busy" name="personality" type="radio" required="" class="sr-only" value="tokyo">
+                <label for="busy"><span class="impact-text">Busy</span> - no time to chat, I have work to do</label>
+              </li>
+            </ul>
+            <a href="#question-five">Next Question</a>
+          </div>
+        </div>
+      </fieldset>
+      <!--Language Survey Question 5-->
+      <fieldset id="question-five">
+        <div class="questions red-bg wrapper">
+          <div class="question-image">
+            <img src="./assets/ramen.jpg" alt="ramen">
+          </div>
+          <div class="question-content">
+            <h3>Language</h3>
+            <p>Now that we have the basics out of the way. How comfortable are you with your Japanese if English is not available?</p>
+            <ul>
+              <li>
+                <input id="english" name="language" type="radio" required="" class="sr-only" value="tokyo">
+                <label for="english"><span class="impact-text">English</span> - I need a lot of English guidance throughout my journey</label>
+              </li>
+              <li>
+                <input id="minimal" name="language" type="radio" required="" class="sr-only" value="kyoto">
+                <label for="minimal"><span class="impact-text">Minimal</span> - I would prefer English, but I can get by without too much of it</label>
+              </li>
+              <li>
+                <input id="intermediate" name="language" type="radio" required="" class="sr-only" value="osaka">
+                <label for="intermediate"><span class="impact-text">Intermediate</span> - I want to test out some Japanese, but still have English</label>
+              </li>
+              <li>
+                <input id="japanese" name="language" type="radio" required="" class="sr-only" value="fukuoka">
+                <label for="japanese"><span class="impact-text">Japanese</span> - I can speak Japanese and am comfortable even with obsure dialects</label>
+              </li>
+            </ul>
+            <button aria-label="submit to get the results" type="submit" class="reverse-color">Tell me where!</button>
           </div>
         </div>
       </fieldset>
@@ -147,7 +209,7 @@
     
   </main>
   <!--Footer-->
-  <footer>
+  <footer class="footer-main">
     <p>Created at Juno College <i class="fas fa-torii-gate"></i></p>
   </footer>
 

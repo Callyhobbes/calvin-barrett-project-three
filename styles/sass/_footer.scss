@@ -1,8 +1,18 @@
 footer {
-  background-color: $red;
   text-align: center;
   p {
     color: $white;
     padding: 10px 0;
   }
 }
+
+.footer-main {
+  background-color: $darkBlue;
+}
+
+.footer-flip {
+  background-color: $red;
+}
+
+
+

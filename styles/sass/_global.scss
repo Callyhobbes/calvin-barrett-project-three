@@ -51,14 +51,22 @@ p {
   line-height: 1.4;
 }
 
+//remove properties to allow button to take 'a' properties
+button {
+  background-color: unset;
+  cursor: pointer;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
+}
+
 a,
 button {
   @include fontStyling(2rem);
   display: inline-block;
   padding: 15px 30px;
   margin: 20px 0;
-  background-color: none;
-  color: #fff;
+  background: none;
+  color: $white;
   text-decoration: none;
   border-radius: 20px;
   border: 3px solid $red;
@@ -88,17 +96,15 @@ button {
   }
 }
 
-//remove properties to allow button to take 'a' properties
-button {
-  background-color: unset;
-  cursor: pointer;
-}
-
 fieldset {
   padding: 0;
   border-style: none;
+  &:nth-child(odd) {
+    background-color: $red;
+  }
 }
 
+//adding the torii before the icons
 label {
   @include fontStyling(2rem);
   padding-left: 15px;
