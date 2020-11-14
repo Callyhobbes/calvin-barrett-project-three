@@ -74,7 +74,8 @@ function smoothScroll() {
 $('form').on('submit', function(event) {
   //prevent browser refresh on submission
   event.preventDefault();
-
+  
+  //smooth scroll to the results section
   $(`html,body`).animate({
     scrollTop: $('.results').offset().top
   }, 1000);
