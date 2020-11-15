@@ -16,22 +16,22 @@ const cities = [
   {
     name: 'tokyo',
     info: 'The bustling sound of people, trains darting back and forth and towers reaching to the sky. Tokyo is filled with everything from the world famous Tsukiji fish market, the Meiji Shrine and the anime enthuists dream: Akihabara',
-    image: './assets/rising-sun.png',
+    image: './assets/tokyo.jpg',
   },
   {
     name: 'osaka',
     info: 'insert text here',
-    image: './assets/rising-sun.png',
+    image: './assets/osaka.jpg',
   },
   {
     name: 'kyoto',
     info: 'insert text here',
-    image: './assets/rising-sun.png',
+    image: './assets/kyoto.jpg',
   },
   {
     name: 'fukuoka',
     info: 'insert text here',
-    image: './assets/rising-sun.png',
+    image: './assets/fukuoka.jpg',
   }
 ];
 

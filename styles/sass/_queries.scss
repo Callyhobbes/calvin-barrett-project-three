@@ -1,0 +1,32 @@
+// Media Query Styling
+@media (max-width: 1200px) {
+  .intro, .result-display, .questions {
+    flex-direction: column;
+  }
+
+  .questions.red-bg {
+    flex-direction: column;
+  }
+
+  .explanation,
+  .question-content {
+    width: 90%;
+  }
+
+  h2,
+  a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    @include fontStyling(6rem, 700);
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    @include fontStyling(4rem, 700);
+  }
+}

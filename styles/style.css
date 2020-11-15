@@ -282,8 +282,6 @@ h2 {
 h3 {
   font-size: 4rem;
   font-weight: 600;
-  padding: 10px 0;
-  text-align: center;
   padding: 20px 0;
 }
 
@@ -348,7 +346,7 @@ button:focus::before {
 }
 
 fieldset {
-  padding: 0;
+  padding: 50px 0;
   border-style: none;
 }
 
@@ -442,6 +440,10 @@ header {
   }
 }
 
+section:first-of-type {
+  padding: 50px 0;
+}
+
 .intro, .result-display, .questions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -452,12 +454,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75vh;
   min-height: 300px;
-}
-
-.result-display {
-  height: calc(100vh - 48px);
 }
 
 .intro, .result-display {
@@ -466,7 +463,20 @@ header {
 
 .intro img, .result-display img {
   width: 33%;
-  border-radius: 20px;
+  border-radius: 50%;
+}
+
+.intro img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 10px #b73a1c;
+          box-shadow: 0px 0px 0px 10px #b73a1c;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.intro img:hover {
+  -webkit-box-shadow: 20px 20px 0px 40px #b73a1c;
+          box-shadow: 20px 20px 0px 40px #b73a1c;
 }
 
 .explanation {
@@ -494,7 +504,7 @@ header {
   transition: .3s ease;
 }
 
-.questions .question-content {
+.question-content {
   width: 50%;
 }
 
@@ -595,6 +605,10 @@ ul li:nth-of-type(4) {
   color: #fff;
 }
 
+.results h3 {
+  text-align: center;
+}
+
 .results h3 span {
   text-transform: capitalize;
 }
@@ -606,6 +620,23 @@ ul li:nth-of-type(4) {
   width: 80px;
   padding-bottom: 10px;
   border-bottom: 3px solid #b73a1c;
+}
+
+.result-display {
+  height: calc(100vh - 48px);
+  padding: 50px 0;
+}
+
+.result-display img {
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-box-shadow: 0px 0px 0px 10px #fff;
+          box-shadow: 0px 0px 0px 10px #fff;
+}
+
+.result-display img:hover {
+  -webkit-box-shadow: 20px 20px 0px 40px #fff;
+          box-shadow: 20px 20px 0px 40px #fff;
 }
 
 .blue-bg a {
@@ -652,4 +683,41 @@ footer p {
 
 .footer-flip {
   background-color: #b73a1c;
+}
+
+@media (max-width: 1200px) {
+  .intro, .result-display, .questions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions.red-bg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .explanation,
+  .question-content {
+    width: 90%;
+  }
+  h2,
+  a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
 }

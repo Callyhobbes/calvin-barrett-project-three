@@ -1,21 +1,29 @@
 //Intro Section Styling
+section:first-of-type {
+  padding: 50px 0;
+}
+
 .intro, .result-display, .questions {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75vh;
   min-height: 300px;
-}
-
-.result-display {
-  height: calc(100vh - 48px)
 }
 
 .intro, .result-display {
   padding: 20px 0;
   img {
     width: 33%;
-    border-radius: 20px;
+    border-radius: 50%;
+  }
+}
+
+.intro img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 10px $red;
+  transition: .8s;
+  &:hover {
+    box-shadow: 20px 20px 0px 40px $red;
   }
 }
 
@@ -36,8 +44,7 @@
 .impact-text {
   transition: .3s ease;
 }
-.questions .question-content {
-
+.question-content {
   width: 50%;
 }
 
@@ -118,6 +125,7 @@ ul {
   background-color: $darkBlue;
   color: $white;
   h3 {
+    text-align: center;
     span {
       text-transform: capitalize;
     }
@@ -128,6 +136,18 @@ ul {
     width: 80px;
     padding-bottom: 10px;
     border-bottom: 3px solid $red;
+    }
+  }
+}
+
+.result-display {
+  height: calc(100vh - 48px);
+  padding: 50px 0;
+  img {
+    transition: .8s;
+    box-shadow: 0px 0px 0px 10px $white;
+    &:hover {
+      box-shadow: 20px 20px 0px 40px $white;
     }
   }
 }

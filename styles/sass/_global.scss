@@ -43,8 +43,6 @@ h2 {
 
 h3 {
   @include fontStyling(4rem, 600);
-  padding: 10px 0;
-  text-align: center;
   padding: 20px 0;
 }
 
@@ -99,7 +97,7 @@ button {
 }
 
 fieldset {
-  padding: 0;
+  padding: 50px 0;
   border-style: none;
   &:nth-child(odd) {
     background-color: $red;
