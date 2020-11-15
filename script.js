@@ -35,12 +35,24 @@ const cities = [
   }
 ];
 
+
+$('h1').hover(
+  function () {
+    $('h1').fadeOut(function () {
+      $(this).text('Welcome to Japan').fadeIn(800);
+    });
+  }, function () {
+    $('h1').fadeOut(function () {
+      $(this).text('日本へようこそ').fadeIn(800);
+    });
+  });
+
 // Create a function to all for a parallax scroll on the h1.
 function parallaxScroll() {
   //add an event listener to the scroll
   $(window).on('scroll', function () {
     //target the h1 as the parallax item
-    const parallaxText = $('.header-text');
+    const parallaxText = $('h1');
 
     let scrolled = $(window).scrollTop();
     let rate = scrolled * -0.5;

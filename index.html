@@ -12,22 +12,23 @@
 <body>
   <!--Header-->
   <header>
-    <h1 class="header-text">ようこそ、日本へ</h1>、
+    <h1 class="header-text" aria-label="hover to change title to Welcome to Japan">日本へようこそ</h1>
     <div class="clouds">
-      <img src="./assets/cloud1.png" style="--i:1;">
-      <img src="./assets/cloud2.png" style="--i:2;">
-      <img src="./assets/cloud3.png" style="--i:3;">
-      <img src="./assets/cloud4.png" style="--i:4;">
-      <img src="./assets/cloud5.png" style="--i:5;">
-      <img src="./assets/cloud1.png" style="--i:10;">
-      <img src="./assets/cloud2.png" style="--i:9;">
-      <img src="./assets/cloud3.png" style="--i:8;">
-      <img src="./assets/cloud4.png" style="--i:7;">
-      <img src="./assets/cloud5.png" style="--i:6;">
+      <img src="./assets/cloud1.png" style="--i:1;" aria-label="cloud">
+      <img src="./assets/cloud2.png" style="--i:2;" aria-label="cloud">
+      <img src="./assets/cloud3.png" style="--i:3;" aria-label="cloud">
+      <img src="./assets/cloud4.png" style="--i:4;" aria-label="cloud">
+      <img src="./assets/cloud5.png" style="--i:5;" aria-label="cloud">
+      <img src="./assets/cloud1.png" style="--i:10"; aria-label="cloud">
+      <img src="./assets/cloud2.png" style="--i:9;" aria-label="cloud">
+      <img src="./assets/cloud3.png" style="--i:8;" aria-label="cloud">
+      <img src="./assets/cloud4.png" style="--i:7;" aria-label="cloud">
+      <img src="./assets/cloud5.png" style="--i:6;" aria-label="cloud">
     </div>
   </header>
   <!--Main-->
   <main>
+    <!--Intro Section-->
     <section>
       <div class="intro wrapper" id="intro">
         <div class="explanation">
@@ -40,12 +41,13 @@
         <img src="./assets/chigasaki.jpg" alt="mount fuji">
       </div>
     </section>
+    <!--Begin of the Quiz Section-->
     <form action="" class="preference">
       <!--Activity Survey Question 1-->
       <fieldset id="question-one">
         <div class="questions red-bg wrapper">
           <div class="question-image">
-            <img src="./assets/temple.jpg" alt="ramen">
+            <img src="./assets/temple.jpg" alt="Japanese temple">
           </div>
           <div class="question-content">
             <h3>Activities</h3>
@@ -78,7 +80,7 @@
       <fieldset id="question-two">
         <div class="questions wrapper">
           <div class="question-image">
-            <img src="./assets/ramen.jpg" alt="ramen">
+            <img src="./assets/ramen.jpg" alt="Japanese ramen">
           </div>
           <div class="question-content">
             <h3>Food</h3>
@@ -111,7 +113,7 @@
       <fieldset id="question-three">
         <div class="questions red-bg wrapper">
           <div class="question-image">
-            <img src="./assets/drink.jpg" alt="ramen">
+            <img src="./assets/drink.jpg" alt="Japanse whisky">
           </div>
           <div class="question-content">
             <h3>Drinks</h3>
@@ -144,7 +146,7 @@
       <fieldset id="question-four">
         <div class="questions wrapper">
           <div class="question-image">
-            <img src="./assets/trains.jpg" alt="ramen">
+            <img src="./assets/trains.jpg" alt="passengers on a train">
           </div>
           <div class="question-content">
             <h3>Personality</h3>
@@ -177,7 +179,7 @@
       <fieldset id="question-five">
         <div class="questions red-bg wrapper">
           <div class="question-image">
-            <img src="./assets/talk.jpg" alt="ramen">
+            <img src="./assets/talk.jpg" alt="man talking">
           </div>
           <div class="question-content">
             <h3>Language</h3>
@@ -206,19 +208,12 @@
           </div>
         </div>
       </fieldset>
+      <!--End of the Quiz section-->
     </form>
     <!--Results Section-->
     <section class="results" id="results">
-      <!-- <div class="result-display wrapper">
-        <div class="explanation">
-          <h3>You got Tokyo!</h3>
-          <p>The bustling sound of people, trains darting back and forth and towers reaching to the sky. Tokyo is filled with everything from the world famous Tsukiji fish market, the Meiji Shrine and the anime enthuists dream: Akihabara</p>
-        </div>
-        <img src="./assets/rising-sun.png" alt="ramen"> -->
-      </div>
       <!--Results to be displayed after quiz completed-->
     </section>
-    
   </main>
   <!--Footer-->
   <footer class="footer-main">
