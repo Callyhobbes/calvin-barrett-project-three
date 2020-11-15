@@ -33,7 +33,9 @@
         <div class="explanation">
           <h2>Welcome to Japan!</h2>
           <p>Your bags have arrived and your passports are stamped for the big adventure! We can't wait for you to explore our beautiful country. That's why we've create a quiz based on your preferences to decided what should be a "<strong>must-see</strong>" city during your trip. Want to change it up? No, problem! Just take the quiz again.</p>
-          <a href="#question-one">Let's Begin!</a>
+          <div class="start-link">
+            <a href="#question-one">Let's Begin!</a>
+          </div>
         </div>
         <img src="./assets/chigasaki.jpg" alt="mount fuji">
       </div>
@@ -51,22 +53,24 @@
             <ul>
               <li>
                 <input id="scenery" name="activity" type="radio" required="" class="sr-only" value="fukuoka">
-                <label for="scenery"><span class="impact-text">Scenery</span> - I want to see the beautiful mountains and valleys</label>
+                <label for="scenery"><span class="impact-text">Scenery</span><span class="dash-hide"> - </span>I want to see the beautiful mountains and valleys</label>
               </li>
               <li>
                 <input id="future" name="activity" type="radio" required="" class="sr-only" value="tokyo">
-                <label for="future"><span class="impact-text">Futuristic</span> - show me what the future looks like</label>
+                <label for="future"><span class="impact-text">Futuristic</span><span class="dash-hide"> - </span>show me what the future looks like</label>
               </li>
               <li>
                 <input id="aquarium" name="activity" type="radio" required="" class="sr-only" value="osaka">
-                <label for="aquarium"><span class="impact-text">Sea Life</span> - I want to look at everything under the sea</label>
+                <label for="aquarium"><span class="impact-text">Sea Life</span><span class="dash-hide"> - </span>I want to look at everything under the sea</label>
               </li>
               <li>
                 <input id="history" name="activity" type="radio" required="" class="sr-only" value="kyoto">
-                <label for="history"><span class="impact-text">History</span> - take me on a trip back in time</label>
+                <label for="history"><span class="impact-text">History</span><span class="dash-hide"> - </span>take me on a trip back in time</label>
               </li>
             </ul>
-            <a href="#question-two" class="reverse-color">Next Question</a>
+            <div class="question-links">
+              <a href="#question-two" class="reverse-color">Next Question</a>
+            </div>
           </div>
         </div>
       </fieldset>
@@ -82,22 +86,24 @@
             <ul>
               <li>
                 <input id="ramen" name="food" type="radio" required="" class="sr-only" value="fukuoka">
-                <label for="ramen"><span class="impact-text">Ramen</span> - the ultimate greasy snack</label>
+                <label for="ramen"><span class="impact-text">Ramen</span><span class="dash-hide"> - </span>the ultimate greasy snack</label>
               </li>
               <li>
                 <input id="sushi" name="food" type="radio" required="" class="sr-only" value="tokyo">
-                <label for="sushi"><span class="impact-text">Sushi</span> - world famous and fresh off the docks</label>
+                <label for="sushi"><span class="impact-text">Sushi</span><span class="dash-hide"> - </span>world famous and fresh off the docks</label>
               </li>
               <li>
                 <input id="takoyaki" name="food" type="radio" required="" class="sr-only" value="osaka">
-                <label for="takoyaki"><span class="impact-text">Takoyaki</span> - deep-fried octopus balls breaded to perfection</label>
+                <label for="takoyaki"><span class="impact-text">Takoyaki</span><span class="dash-hide"> - </span>deep-fried octopus balls breaded to perfection</label>
               </li>
               <li>
                 <input id="yudofu" name="food" type="radio" required="" class="sr-only" value="kyoto">
-                <label for="yudofu"><span class="impact-text">Yudofu</span> - boiled tofu with kelp and dipping sauce</label>
+                <label for="yudofu"><span class="impact-text">Yudofu</span><span class="dash-hide"> - </span>boiled tofu with kelp and dipping sauce</label>
               </li>
             </ul>
-            <a href="#question-three">Next Question</a>
+            <div class="question-links">
+              <a href="#question-three">Next Question</a>
+            </div>
           </div>
         </div>
       </fieldset>
@@ -113,22 +119,24 @@
             <ul>
               <li>
                 <input id="shochu" name="drink" type="radio" required="" class="sr-only" value="fukuoka">
-                <label for="shochu"><span class="impact-text">Shochu</span> - a delicious sweet potato in liquid form</label>
+                <label for="shochu"><span class="impact-text">Shochu</span><span class="dash-hide"> - </span>a delicious sweet potato in liquid form</label>
               </li>
               <li>
                 <input id="whisky" name="drink" type="radio" required="" class="sr-only" value="tokyo">
-                <label for="whisky"><span class="impact-text">Whisky</span> - on the rock, on top of the world</label>
+                <label for="whisky"><span class="impact-text">Whisky</span><span class="dash-hide"> - </span>on the rock, on top of the world</label>
               </li>
               <li>
                 <input id="beer" name="drink" type="radio" required="" class="sr-only" value="osaka">
-                <label for="beer"><span class="impact-text">Beer</span> - straight from bottle to your frosted glass</label>
+                <label for="beer"><span class="impact-text">Beer</span><span class="dash-hide"> - </span>straight from bottle to your frosted glass</label>
                 </li>
                 <li>
                   <input id="umeshu" name="drink" type="radio" required="" class="sr-only" value="kyoto">
-                  <label for="umeshu"><span class="impact-text">Umeshu</span> - a distilled plum drink under the cherry blossoms</label>
+                  <label for="umeshu"><span class="impact-text">Umeshu</span><span class="dash-hide"> - </span>a distilled plum drink under the cherry blossoms</label>
               </li>
             </ul>
-            <a href="#question-four" class="reverse-color">Next Question</a>
+            <div class="question-links">
+              <a href="#question-four" class="reverse-color">Next Question</a>
+            </div>
           </div>
         </div>
       </fieldset>
@@ -140,26 +148,28 @@
           </div>
           <div class="question-content">
             <h3>Personality</h3>
-            <p>You have begun an hour long train ride to your next destination. Who would you perfer to sit next to?</p>
+            <p>You have begun an hour long train ride to your next destination. Who would you prefer to sit next to?</p>
             <ul>
               <li>
                 <input id="boisterous" name="personality" type="radio" required="" class="sr-only" value="osaka">
-                <label for="boisterous"><span class="impact-text">Boisterous</span> - energetic and cheerful to a fault</label>
+                <label for="boisterous"><span class="impact-text">Boisterous</span><span class="dash-hide"> - </span>energetic and cheerful to a fault</label>
               </li>
               <li>
                 <input id="reserved" name="personality" type="radio" required="" class="sr-only" value="kyoto">
-                <label for="reserved"><span class="impact-text">Reserved</span> - quiet, yet polite. Not a hair out of place</label>
+                <label for="reserved"><span class="impact-text">Reserved</span><span class="dash-hide"> - </span>quiet, yet polite. Not a hair out of place</label>
               </li>
               <li>
                 <input id="shy" name="personality" type="radio" required="" class="sr-only" value="fukuoka">
-                <label for="shy"><span class="impact-text">Shy</span> - friendly, but bashful.</label>
+                <label for="shy"><span class="impact-text">Shy</span><span class="dash-hide"> - </span>friendly, but bashful.</label>
               </li>
               <li>
                 <input id="busy" name="personality" type="radio" required="" class="sr-only" value="tokyo">
-                <label for="busy"><span class="impact-text">Busy</span> - no time to chat, I have work to do</label>
+                <label for="busy"><span class="impact-text">Busy</span><span class="dash-hide"> - </span>no time to chat, I have work to do</label>
               </li>
             </ul>
-            <a href="#question-five">Next Question</a>
+            <div class="question-links">
+              <a href="#question-five">Next Question</a>
+            </div>
           </div>
         </div>
       </fieldset>
@@ -175,22 +185,24 @@
             <ul>
               <li>
                 <input id="english" name="language" type="radio" required="" class="sr-only" value="tokyo">
-                <label for="english"><span class="impact-text">English</span> - I need a lot of English guidance</label>
+                <label for="english"><span class="impact-text">English</span><span class="dash-hide"> - </span>I need a lot of English guidance</label>
               </li>
               <li>
                 <input id="minimal" name="language" type="radio" required="" class="sr-only" value="kyoto">
-                <label for="minimal"><span class="impact-text">Minimal</span> - I would prefer English</label>
+                <label for="minimal"><span class="impact-text">Minimal</span><span class="dash-hide"> - </span>I would prefer English</label>
               </li>
               <li>
                 <input id="intermediate" name="language" type="radio" required="" class="sr-only" value="osaka">
-                <label for="intermediate"><span class="impact-text">Intermediate</span> - I want to test out some Japanese</label>
+                <label for="intermediate"><span class="impact-text">Intermediate</span><span class="dash-hide"> - </span>I want to test out some Japanese</label>
               </li>
               <li>
                 <input id="japanese" name="language" type="radio" required="" class="sr-only" value="fukuoka">
-                <label for="japanese"><span class="impact-text">Japanese</span> - I can speak Japanese</label>
+                <label for="japanese"><span class="impact-text">Japanese</span><span class="dash-hide"> - </span>I can speak Japanese</label>
               </li>
             </ul>
-            <button aria-label="submit to get the results" type="submit" class="reverse-color">Tell me where!</button>
+            <div class="question-links">
+              <button aria-label="submit to get the results" type="submit" class="reverse-color">Tell me where!</button>
+            </div>
           </div>
         </div>
       </fieldset>

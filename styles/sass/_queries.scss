@@ -4,24 +4,90 @@
     flex-direction: column;
   }
 
-  .questions.red-bg {
-    flex-direction: column;
-  }
-
   .explanation,
   .question-content {
     width: 90%;
   }
 
   h2,
-  a {
+  .start-link {
     text-align: center;
+  }
+
+  h2::after {
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  .intro img {
+    margin: 30px auto 10px;
+    width: 60%;
+  }
+
+  fieldset > .questions {
+    flex-direction: column-reverse;
+  }
+
+  .question-image {
+    width: 100%;
+    img {
+      margin: 30px auto 10px;
+      width: 60%;
+    }
   }
 }
 
 @media (max-width: 1000px) {
   h1 {
     @include fontStyling(6rem, 700);
+  }
+}
+
+@media (max-width: 800px) {
+  .questions h3 {
+    text-align: center;
+    &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid $red;
+    }
+  }
+
+  .red-bg h3::after {
+    border-bottom: 5px solid $darkBlue;
+  }
+
+  .question-links {
+    text-align: center;
+  }
+
+  ul {
+    padding: 20px 0;
+    li {
+    margin: 20px 0;
+    }
+  }
+
+  .impact-text,
+  label {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    &::before {
+      left: 0;
+    }
+  }
+
+  .impact-text,
+  label::before {
+    @include fontStyling(4rem, 900);
+  }
+
+  .dash-hide {
+    display: none;
   }
 }
 

@@ -39,6 +39,13 @@ h1 {
 h2 {
   @include fontStyling(5rem, 600);
   padding: 20px 0;
+  &:after {
+    content: "";
+    display: block;
+    width: 200px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid $red;
+  }
 }
 
 h3 {
@@ -49,6 +56,7 @@ h3 {
 p {
   @include fontStyling(2rem);
   line-height: 1.4;
+  padding-bottom: 20px;
 }
 
 //remove properties to allow button to take 'a' properties
