@@ -30,6 +30,11 @@ const cities = [
   }
 ];
 
+// Time-out for preload of plane landing icon
+setTimeout(function () {
+  $('.preload').fadeToggle();
+}, 2500);
+
 // Create the ability to change the h1 text to English on hover
 function changeText() {
   $('h1').hover(

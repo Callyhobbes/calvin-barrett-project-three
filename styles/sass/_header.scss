@@ -10,12 +10,6 @@ header {
   align-items: center;
 }
 
-// h1 {
-//   &:hover {
-//     color: $darkBlue;
-//   }
-// }
-
 .clouds {
   position: absolute;
   top: 0;
@@ -43,5 +37,36 @@ header {
   100% {
     opacity: 0;
     transform: scale(3);
+  }
+}
+
+.preload {
+  background-color: $black;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  &::before {
+    content: "\f5af";
+    @include fontStyling(17rem, 900);
+    font-family: "Font Awesome 5 Free";
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pop-up 3s linear;
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
