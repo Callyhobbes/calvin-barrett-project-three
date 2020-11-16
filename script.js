@@ -15,17 +15,17 @@ const cities = [
   },
   {
     name: 'osaka',
-    info: `<p>A city filled with deep fried goodies like <a href="https://www.justonecookbook.com/takoyaki-recipe/" target="_blank" class="location-links">Takoyaki</a> and <a href="https://www.justonecookbook.com/kushikatsu-kushiage/" target="_blank" class="location-links">Kushikatsu</a> and filled with lively and excentric personalities. Osaka hosts one of the world's best aquariums at <a href= "https://www.kaiyukan.com/language/eng/" target="_blank" class="location-links" >Kaiyukan</a>. Osakan's sport a thick <a href="https://osaka-info.jp/en/page/osaka-dialect" target="_blank" class="location-links">accent</a>, so remember to say thank you with an "okini" and a big smile!</p>`,
+    info: `<p>A city filled with deep fried goodies like <a href="https://www.justonecookbook.com/takoyaki-recipe/" target="_blank" class="location-links">Takoyaki</a> and <a href="https://www.justonecookbook.com/kushikatsu-kushiage/" target="_blank" class="location-links">Kushikatsu</a> and populated by lively and eccentric personalities. Osaka hosts one of the world's best aquariums at <a href= "https://www.kaiyukan.com/language/eng/" target="_blank" class="location-links" >Kaiyukan</a>. Osakan's sport a thick <a href="https://osaka-info.jp/en/page/osaka-dialect" target="_blank" class="location-links">accent</a>, so remember to say thank you with an "okini" and a big smile!</p>`,
     image: './assets/osaka.jpg',
   },
   {
     name: 'kyoto',
-    info: `<p>Steeped in history, Kyoto is the former capital of Japan. This city is filled with history whether it be the <a href="https://www.japan-guide.com/e/e3908.html" target="_blank" class="location-links">Kinkakuji</a> Temple and the traditional streets of <a href="https://www.japan-guide.com/e/e3902.html" target="_blank" class="location-links">Gion</a>, you are sure to find something you'll like.You even catch a glimpse of a<a href = "https://www.japan-guide.com/e/e2102.html" target = "_blank" class= "location-links" > Geisha</a> roaming the streets</p >`,
+    info: `<p>Steeped in history, Kyoto is the former capital of Japan. This city is filled with history whether it be the <a href="https://www.japan-guide.com/e/e3908.html" target="_blank" class="location-links">Kinkakuji</a> Temple and the traditional streets of <a href="https://www.japan-guide.com/e/e3902.html" target="_blank" class="location-links">Gion</a>, you are sure to find something you'll like. You might even catch a glimpse of a<a href = "https://www.japan-guide.com/e/e2102.html" target = "_blank" class= "location-links" > Geisha</a> roaming the streets</p >`,
     image: './assets/kyoto.jpg',
   },
   {
     name: 'fukuoka',
-    info: `<p>Looking for a more local experience? Fukuoka is the place for you! This city has some of the <a href="https://www.ippudo.com/" target="_blank" class="location-links">ramen</a> in all of the world. Need a break? Why not visit some hot <a href="https://www.japan-guide.com/e/e4701.html" target="_blank" class="location-links">springs</a> close by or marvel in the spectacular <a href="https://uminaka-park.jp/en/" target="_blank" class="location-links">parks</a> and mountains of the area.</p>`,
+    info: `<p>Looking for a more local experience? Fukuoka is the place for you! This city has some of the best <a href="https://www.ippudo.com/" target="_blank" class="location-links">ramen</a> in all of the world. Need a break? Why not visit some hot <a href="https://www.japan-guide.com/e/e4701.html" target="_blank" class="location-links">springs</a> close by or marvel in the spectacular <a href="https://uminaka-park.jp/en/" target="_blank" class="location-links">parks</a> and mountains of the area.</p>`,
     image: './assets/fukuoka.jpg',
   }
 ];
