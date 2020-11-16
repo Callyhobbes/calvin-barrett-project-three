@@ -10,6 +10,7 @@ header {
   align-items: center;
 }
 
+// spreload that will fade into the header section
 .preload {
   background-color: $black;
   width: 100vw;
@@ -41,6 +42,7 @@ header {
   }
 }
 
+// multiple clouds scaling to create a moving cloud effect
 .clouds {
   position: absolute;
   top: 0;

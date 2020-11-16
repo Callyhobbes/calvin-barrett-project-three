@@ -1,9 +1,10 @@
-//Color Variables
+// Color Variables
 $white: #fff;
 $darkBlue: #151e25;
 $red: #b73a1c;
 $black: #140f0b;
 
+// Font Style
 @mixin fontStyling($sizeValue, $weightValue: 400) {
   font-size: $sizeValue;
   font-weight: $weightValue;

@@ -1,4 +1,4 @@
-//Intro Section Styling
+// Intro Section Styling
 section:first-of-type {
   padding: 50px 0;
 }
@@ -31,6 +31,8 @@ section:first-of-type {
   width: 50%;
 }
 
+
+// Question Section
 .questions {
   flex-direction: row-reverse;
   padding: 30px 0;
@@ -41,7 +43,7 @@ section:first-of-type {
   color: $white;
 }
 
-// span to change option selected text color
+// Span to change selected text color
 .impact-text {
   transition: .3s ease;
 }
@@ -54,6 +56,7 @@ section:first-of-type {
   justify-content: center;
   align-items: center;
   width: 33%;
+  // Create a growing cicle behind image on hover
   img {
     border-radius: 50%;
     box-shadow: 0px 0px 0px 10px $red;
@@ -71,9 +74,10 @@ section:first-of-type {
   }
 }
 
+// Icon and text change on checked
 input[type="radio"]:checked + label .impact-text {
-  font-weight: 700;
   color: $red;
+  font-weight: 700;
 }
 
 input[type="radio"]:checked + label::before {
@@ -90,7 +94,7 @@ input[type="radio"]:checked + label::before {
   }
 }
 
-// anchor and button styling in red background fieldsets
+// Anchor and button styling in red background fieldsets
 .red-bg a,
 .red-bg button {
   border: 3px solid $white;
@@ -109,7 +113,6 @@ input[type="radio"]:checked + label::before {
   }
 }
 
-//Question Styling
 ul {
   list-style: none;
   padding: 50px 0;
@@ -121,7 +124,7 @@ ul {
   }
 }
 
-//Results Styling
+// Results Styling
 .results {
   background-color: $darkBlue;
   color: $white;
@@ -152,6 +155,7 @@ ul {
   }
 }
 
+// Links within the results
 .location-links {
   color: $red;
   padding: 0;
@@ -177,6 +181,13 @@ ul {
   }
 }
 
+// Quiz Re-Do Section
+.redo-quiz {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 .blue-bg a {
   border: 3px solid $white;
   background: none;
@@ -192,12 +203,6 @@ ul {
   &::before {
     background-color: $white;
   }
-}
-
-.redo-quiz {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
 }
 
 

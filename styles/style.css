@@ -601,8 +601,8 @@ section:first-of-type {
 }
 
 input[type="radio"]:checked + label .impact-text {
-  font-weight: 700;
   color: #b73a1c;
+  font-weight: 700;
 }
 
 input[type="radio"]:checked + label::before {
@@ -721,6 +721,16 @@ ul li:nth-of-type(4) {
   color: #fff;
 }
 
+.redo-quiz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
+
 .blue-bg a {
   border: 3px solid #fff;
   background: none;
@@ -738,16 +748,6 @@ ul li:nth-of-type(4) {
 
 .blue-bg a::before {
   background-color: #fff;
-}
-
-.redo-quiz {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 20px;
 }
 
 footer {

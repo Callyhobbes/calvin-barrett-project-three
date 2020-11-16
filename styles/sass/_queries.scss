@@ -25,6 +25,7 @@
     width: 60%;
   }
 
+  // Stack question section
   fieldset > .questions {
     flex-direction: column-reverse;
   }
@@ -45,6 +46,7 @@
 }
 
 @media (max-width: 800px) {
+  // Add red underline to question headers
   .questions h3 {
     text-align: center;
     &::after {
@@ -72,6 +74,7 @@
     }
   }
 
+  // Stack the question options vertically
   .impact-text,
   label {
     display: block;
@@ -87,6 +90,7 @@
     @include fontStyling(4rem, 900);
   }
 
+  // Remove dash from stacked questions
   .dash-hide {
     display: none;
   }
