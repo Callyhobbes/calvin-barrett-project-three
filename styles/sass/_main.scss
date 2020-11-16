@@ -142,7 +142,6 @@ ul {
 }
 
 .result-display {
-  height: calc(100vh - 48px);
   padding: 50px 0;
   img {
     transition: .8s;
@@ -150,6 +149,31 @@ ul {
     &:hover {
       box-shadow: 20px 20px 0px 40px $white;
     }
+  }
+}
+
+.location-links {
+  color: $red;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  height: 100%;
+  display: inline;
+  position: relative;
+  &:hover:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: $red;
+    bottom: 0;
+    left: 0;
+  }
+  &:hover {
+    background: none;
+    border: none;
+    color: $white;
   }
 }
 
